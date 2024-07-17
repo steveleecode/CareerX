@@ -18,8 +18,8 @@
         android:id="@+id/summary_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Career Quest is a program that allows for people to take their skills and interests and be matched to a career they'll love to pursue..."
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:text="@string/summary" />
 
     <Button
         android:id="@+id/start_survey_button"
