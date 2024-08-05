@@ -96,7 +96,7 @@ class ResultActivity : AppCompatActivity() {
 
         fun chatGPT(prompt: String): String {
             val url = "https://api.openai.com/v1/chat/completions"
-            val apiKey = "sk-proj-KF7xWCEuhJmjdaOa2jdfT3BlbkFJ3aPzb15qasRORdodfW3F"
+            val apiKey = "sk-proj-uKRWyN3LZcb38F3OXmAqT3BlbkFJ44UAuRGO0m8Sh67rvoc1"
             val model = "gpt-3.5-turbo"
             val temperature = 0.7
 
