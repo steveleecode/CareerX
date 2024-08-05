@@ -1,53 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
+
 
     <TextView
         android:id="@+id/question_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Question"
         android:textSize="18sp"
-        android:text="Question" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EBE5EF"
+        android:text="Next"
+        android:textColor="#65558E"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="641dp" />
 
     <RadioGroup
         android:id="@+id/answer_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="16dp">
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="39dp">
 
         <RadioButton
             android:id="@+id/option_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 1" />
+            android:text="Option 1"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="55dp" />
 
         <RadioButton
             android:id="@+id/option_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 2" />
+            android:text="Option 2"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="103dp" />
 
         <RadioButton
             android:id="@+id/option_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 3" />
+            android:text="Option 3"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="151dp" />
 
         <RadioButton
             android:id="@+id/option_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Option 4" />
-    </RadioGroup>
 
-    <Button
-        android:id="@+id/next_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Next" />
-</LinearLayout>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
