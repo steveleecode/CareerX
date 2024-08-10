@@ -7,30 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
+    <include
         android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="CareerX"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="181dp"
-            tools:layout_editor_absoluteY="18dp" />
-
-
-    </androidx.appcompat.widget.Toolbar>
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
 
     <TextView
         android:id="@+id/summary_title"
@@ -78,5 +60,17 @@
         app:layout_constraintTop_toBottomOf="@+id/summary_title"
         tools:layout_editor_absoluteX="0dp"
         tools:srcCompat="@drawable/smile" />
+
+    <Button
+        android:id="@+id/results"
+        android:layout_width="141dp"
+        android:layout_height="49dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="sans-serif-black"
+        android:text="See Results"
+        android:textColor="#21005D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

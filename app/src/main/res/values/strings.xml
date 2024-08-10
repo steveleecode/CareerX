@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">CareerX</string>
+    <string name="app_name">CareerQuest</string>
     <string name="no_internet_connection">No internet connection. Please try again later.</string>
-    <string name = "summary">CareerX is a program that allows for people to take their skills and interests and be matched to a career they’ll love to pursue.
+    <string name="title">CareerQuest"</string>
+    <string name = "summary">CareerQuest is a program that allows for people to take their skills and interests and be matched to a career they’ll love to pursue.
 \n\nOften, we see kids being pushed towards a career they don’t want, because of social pressure, parental influence, or monetary motivation. We believe that all kids should be able to pick a career based on what they love to do. However, often they are not even introduced to career possibilities that align with their interests.
-\n\nThe goal of CareerX is to allow kids to see the possibilities for a lifelong career, to let them choose something they really like doing. </string>
+\n\nThe goal of CareerQuest is to allow kids to see the possibilities for a lifelong career, to let them choose something they really like doing. </string>
 </resources>

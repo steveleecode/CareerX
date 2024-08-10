@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:id="@+id/career1"
-        android:layout_width="match_parent"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loading..."
-        android:textSize="18sp" />
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Your suggested careers are:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <TextView
-        android:id="@+id/explain1"
+    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="0dp">
 
-    <TextView
-        android:id="@+id/career2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Loading..."
-        android:textSize="18sp" />
+        <!-- Add multiple accordion items -->
 
-    <TextView
-        android:id="@+id/explain2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        <!-- Add as many as needed -->
 
-    <TextView
-        android:id="@+id/career3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Loading..."
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/explain3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/restart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Over" />
-</LinearLayout>
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#E9DCFE"
+        android:fontFamily="sans-serif-black"
+        android:padding="16dp"
+        android:text="Home"
+        android:textColor="#21005D"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

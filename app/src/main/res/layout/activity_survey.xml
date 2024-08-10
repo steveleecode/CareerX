@@ -7,64 +7,73 @@
     android:layout_height="match_parent">
 
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/qnum"
+        android:layout_width="106dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:text="Question n of n:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
     <TextView
         android:id="@+id/question_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
         android:text="Question"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/qnum" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/question_recycler_view"
+        android:layout_width="382dp"
+        android:layout_height="605dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_text" />
 
     <Button
         android:id="@+id/next_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="102dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="52dp"
         android:backgroundTint="#EBE5EF"
         android:text="Next"
         android:textColor="#65558E"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="641dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/answer_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="39dp">
 
-        <RadioButton
-            android:id="@+id/option_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option 1"
-            tools:layout_editor_absoluteX="3dp"
-            tools:layout_editor_absoluteY="55dp" />
-
-        <RadioButton
-            android:id="@+id/option_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option 2"
-            tools:layout_editor_absoluteX="3dp"
-            tools:layout_editor_absoluteY="103dp" />
-
-        <RadioButton
-            android:id="@+id/option_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option 3"
-            tools:layout_editor_absoluteX="3dp"
-            tools:layout_editor_absoluteY="151dp" />
-
-        <RadioButton
-            android:id="@+id/option_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option 4" />
-
-    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

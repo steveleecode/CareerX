@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="410dp"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/title"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/login_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/round_button"
+        android:src="@mipmap/profile_foreground"
+        android:contentDescription="Profile Icon"
+        android:scaleType="fitCenter"
+        android:padding="0dp" />
+
+
+
+</androidx.appcompat.widget.Toolbar>

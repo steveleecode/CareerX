@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "844527095955",
+    "project_id": "careerx-kotlin",
+    "storage_bucket": "careerx-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844527095955:android:1485d5ec87ae2bbbf13d66",
+        "android_client_info": {
+          "package_name": "com.example.careerx_kotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATHCbD9jiRjf-TvkWb8aYabCMUlZ048iE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
